@@ -1,7 +1,7 @@
 # Applied data science portfolio
 ## Donnelly Baart
 
-Op deze pagina beschrijf ik kort wat ik allemaal gedaan heb tijdens deze minor. Om te beginnen heb ik alle datacamp opdrachten afgerond.
+Op deze pagina beschrijf ik kort wat ik allemaal gedaan heb tijdens deze minor. Om te beginnen heb ik [alle datacamp opdrachten afgerond](datacamp/datacamp.png).
 
 Ik heb ook veel van de code geschreven. Ik heb de eerste opzetten geschreven voor het trainen, het berekenen van de kosten, het genetische algoritme en om resultaten te evalueren. Daarna heb ik de rest geholpen met het toevoegen van hun aanpassingen en met het schrijven van efficiënte numpy code. In het hoofdstuk Code ga ik hier dieper op in. In het hoofdstuk Genetisch algoritme beschrijf ik iets specifieker hoe ik het genetische algoritme in elkaar heb gezet en hoe ik aan de hyperparameters gekomen ben.
 
