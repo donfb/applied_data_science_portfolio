@@ -3,7 +3,7 @@
 
 Op deze pagina beschrijf ik kort wat ik allemaal gedaan heb tijdens deze minor. Om te beginnen heb ik [alle datacamp opdrachten afgerond](datacamp/datacamp.png).
 
-Ik heb ook veel van de code geschreven. Ik heb de eerste opzetten geschreven voor het [trainen](python%20code/train.py), het [berekenen van de kosten](python%20code/calculate_cost.py), het [genetische algoritme](python%20code/genetic_algorith.py) en om [resultaten te evalueren](python%20code/evaluate.py). Daarna heb ik de rest geholpen met het toevoegen van hun aanpassingen en met het schrijven van efficiënte numpy code. In het hoofdstuk [Code](#Code) ga ik hier dieper op in. In het hoofdstuk [Genetisch algoritme](#Genetisch-algoritme) beschrijf ik iets specifieker hoe ik het genetische algoritme in elkaar heb gezet en hoe ik aan de hyperparameters gekomen ben.
+Ik heb ook veel van de code geschreven. Ik heb de eerste opzetten geschreven voor het [trainen](python%20code/train.py), het [berekenen van de kosten](python%20code/calculate_cost.py), het [genetische algoritme](python%20code/genetic_algorith.py) en om [resultaten te evalueren](python%20code/evaluate.py). Daarna heb ik de rest geholpen met het toevoegen van hun aanpassingen en met het schrijven van efficiënte numpy code. In het hoofdstuk [Code](#Code) ga ik hier dieper op in. In het hoofdstuk [Genetisch algoritme](#Genetisch-algoritme) beschrijf ik iets specifieker hoe ik het genetische algoritme in elkaar heb gezet en in het hoofdstuk [Hyperparameters tunen en de uitkomst evalueren](#Hyperparameters-tunen-en-de-uitkomst-evalueren) leg ik uit hoe ik aan de hyperparameters gekomen ben en hoe ik de resultaten gevalideerd heb.
 
 Ik heb een paar presentaties voorbereid en gegeven. Een [introducerende open presentatie](presentaties/Renewable_power_plant_27_september.pptx) en een [educatieve presentatie over genetische algoritmen](presentaties/Genetic%20Algorithm.pptx). Verder heb ik samen met de rest van de groep [gepresenteerd bij de intreerede van Sander Mertens](presentaties/20191015%20TAA%20Renewable_power_plant_16_oktober_V2.pdf). Voor de educatieve presentatie heb ik ook een [Jupyter Notebook](presentaties/Genetic%20Algorithm.ipynb) gemaakt. Daarnaast heb ik ook geholpen bij de voorbereidingen van de meeste andere presentaties. Ik heb met Michiel gepresenteerd tijdens de techathon. Deze is op [YouTube](https://www.youtube.com/watch?v=sHE-wO2mNNc&list=PLM5H_L9cUkvdEXeLjSe2F3ealsw76LATe&index=5&t=0s) te zien. Hierover vertel ik meer in het hoofdstuk [Presentaties en paper](#Presentaties-en-paper).
 
@@ -18,7 +18,7 @@ Nu wilt het lectoraat graag weten hoe je aan de beste opstelling van zonnepanele
 Onze hoofdvraag was “Wat is de optimale opstelling van een hybride solar/wind energy system voor een fabriek waarbij de kosten het laagst zijn?”. Hierbij hebben we de volgende deelvragen bedacht:
 
 •	Wat is er nodig om de aangeleverde simulatie in MATLAB aan te sturen via Python?<br/>
-•	Wat is het beste algoritme om de optimale hybride solar/wind energy configuratie te vinden?<br/>
+•	[Wat is het beste algoritme om de optimale hybride solar/wind energy configuratie te vinden?](#Hoofdvraag-en-deelvragen)<br/>
 •	[Welke hyperparameters zijn het beste voor het algoritme?](#Hyperparameters-tunen-en-de-uitkomst-evalueren)<br/>
 •	Welke kosten zijn relevant voor het vinden van de optimale hybride solar/wind energy configuratie?<br/>
 •	Hoe werkt een hybride solar/wind energy systeem?
@@ -29,7 +29,7 @@ Reinforcement learning werkt dus met discrete keuzes. Dit is goed om te bepalen 
 
 Een genetisch algoritme bleef over als duidelijke keuze omdat dit algoritme ideaal is voor kleine aanpassingen zoals iets minder zonnepanelen en omdat het goed om kan gaan met elke kostenfunctie zonder dat het algoritme iets hoeft te weten over de werking hiervan. Dit laatste was belangrijk omdat de simulatie in matlab aangeleverd was en wij in python werken. Hierdoor werd een groot deel van de kostenfunctie een soort “black box”. Het antwoord op de deelvraag *"Wat is het beste algoritme om de optimale hybride solar/wind energy configuratie te vinden?"* is dan ook *"Een genetisch algoritme"*.
 
-De hyperparameters voor een genetisch algoritme zijn niet zo belangrijk als bij neurale netwerken. Je hebt best wat speling en zonder de optimale waardes kom je er vaak ook. Ik heb er tuurlijk wel wat tijd aan besteed. Hierover is meer te lezen in het hoofdstuk [Genetisch algoritme](#Genetisch-algoritme).
+De hyperparameters voor een genetisch algoritme zijn niet zo belangrijk als bij neurale netwerken. Je hebt best wat speling en zonder de optimale waardes kom je er vaak ook. Ik heb er tuurlijk wel wat tijd aan besteed. Hierover is meer te lezen in het hoofdstuk [Hyperparameters tunen en de uitkomst evalueren](#Hyperparameters-tunen-en-de-uitkomst-evalueren).
 
 ### Planning
 We hebben scrum gebruikt tijdens het project. De meesten hadden dit al eerder gebruikt en Michiel was er erg enthousiast over. Hij was dan ook onze scrum master. We gebruikten sprints van twee weken. Aan het begin van een sprint maakten we met zijn allen taken aan. Tijdens de sprint pakten we dan een taak en als we hem af hadden pakten we een nieuwe. We hadden zelfs een fysiek scrumbord. Ik zeg hadden omdat dit in stukken is gescheurd en daarna is weggegooid. Dit bord hebben we dus niet meer.
